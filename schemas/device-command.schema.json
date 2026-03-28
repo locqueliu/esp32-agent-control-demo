@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/device-command.schema.json",
+  "title": "DeviceCommand",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "device_id",
+    "kind",
+    "params"
+  ],
+  "properties": {
+    "device_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "motion.play",
+        "screen.show",
+        "led.set",
+        "servo.set"
+      ]
+    },
+    "params": {
+      "type": "object"
+    }
+  }
+}

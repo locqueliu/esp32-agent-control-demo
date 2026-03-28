@@ -1,0 +1,14 @@
+{
+  "jsonrpc": "2.0",
+  "method": "tools/call",
+  "params": {
+    "name": "self.led.set",
+    "arguments": {
+      "mode": "pulse",
+      "r": 80,
+      "g": 180,
+      "b": 255
+    }
+  },
+  "id": 4
+}

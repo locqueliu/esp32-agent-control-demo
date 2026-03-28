@@ -1,0 +1,8 @@
+{
+  "device_id": "esp32-pet-01",
+  "kind": "motion.play",
+  "params": {
+    "name": "wave",
+    "speed": 3
+  }
+}

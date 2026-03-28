@@ -1,0 +1,12 @@
+{
+  "jsonrpc": "2.0",
+  "method": "tools/call",
+  "params": {
+    "name": "self.motion.play",
+    "arguments": {
+      "name": "wave",
+      "speed": 3
+    }
+  },
+  "id": 2
+}

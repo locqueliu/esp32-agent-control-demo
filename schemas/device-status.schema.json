@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/device-status.schema.json",
+  "title": "DeviceStatus",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "device_id",
+    "state",
+    "capabilities"
+  ],
+  "properties": {
+    "device_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "screen",
+        "led",
+        "motion"
+      ],
+      "properties": {
+        "screen": {
+          "type": "string"
+        },
+        "led": {
+          "type": "string"
+        },
+        "motion": {
+          "type": "string"
+        }
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

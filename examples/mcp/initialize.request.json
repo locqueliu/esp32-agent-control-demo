@@ -1,0 +1,11 @@
+{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "params": {
+    "capabilities": {
+      "vision": false,
+      "device_control": true
+    }
+  },
+  "id": 1
+}

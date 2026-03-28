@@ -1,0 +1,16 @@
+# python
+__pycache__/
+*.pyc
+
+# build output
+build/
+dist/
+
+# editors
+.vscode/
+.idea/
+
+# local environment
+.env
+.env.*
+local/

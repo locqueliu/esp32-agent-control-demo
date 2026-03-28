@@ -1,0 +1,104 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "tools": [
+      {
+        "name": "self.motion.play",
+        "description": "Play a named motion preset on the ESP32 device.",
+        "inputSchema": {
+          "type": "object",
+          "required": [
+            "name"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "speed": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5
+            }
+          }
+        }
+      },
+      {
+        "name": "self.screen.show",
+        "description": "Show an expression on the device screen.",
+        "inputSchema": {
+          "type": "object",
+          "required": [
+            "expression"
+          ],
+          "properties": {
+            "expression": {
+              "type": "string"
+            },
+            "duration_ms": {
+              "type": "integer",
+              "minimum": 200,
+              "maximum": 10000
+            }
+          }
+        }
+      },
+      {
+        "name": "self.led.set",
+        "description": "Set LED mode and RGB values.",
+        "inputSchema": {
+          "type": "object",
+          "required": [
+            "mode",
+            "r",
+            "g",
+            "b"
+          ],
+          "properties": {
+            "mode": {
+              "type": "string"
+            },
+            "r": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 255
+            },
+            "g": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 255
+            },
+            "b": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 255
+            }
+          }
+        }
+      },
+      {
+        "name": "self.servo.set",
+        "description": "Set one servo channel to a target angle.",
+        "inputSchema": {
+          "type": "object",
+          "required": [
+            "channel",
+            "angle"
+          ],
+          "properties": {
+            "channel": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 7
+            },
+            "angle": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 180
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "device_id": "esp32-pet-01",
+  "state": {
+    "screen": "happy",
+    "led": "pulse",
+    "motion": "idle_bounce"
+  },
+  "capabilities": [
+    "screen.show",
+    "led.set",
+    "servo.set",
+    "motion.play"
+  ]
+}
