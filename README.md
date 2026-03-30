@@ -1,3 +1,5 @@
+![Repo banner](./assets/repo-banner.svg)
+
 # esp32-agent-control-demo
 
 [Chinese Version](./README_zh.md)
